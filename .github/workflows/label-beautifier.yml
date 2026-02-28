@@ -17,4 +17,5 @@ jobs:
     uses: 0GiS0/agentic-repo/.github/workflows/label-beautifier.yml@main
     with:
       dry_run: ${{ inputs.dry_run }}
-    secrets: inherit
+    secrets:
+      COPILOT_PAT: ${{ secrets.COPILOT_PAT }}
